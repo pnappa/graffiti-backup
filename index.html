@@ -188,9 +188,22 @@ body {
      #WOWLINES {
        border: 2px solid black;
      }
+</style><style>
+@keyframes strobe {
+  50% { background:black; color:white; }
+}
+
+#strobe {
+background:white;color:black;
+animation:strobe 1ms steps(1,end) infinite;
+position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);z-index: 999999999999999999999999;
+}
 </style>
 </head>
 <body>
+<div id="strobe">
+	<h1>~lily was here!!!</h1>
+</div>
 <marquee style="height:;width:" scrollamount="200" scrolldelay="5"> <sup><em><b><h1 style="color: black;background-color: black; font-size: 150px">VANTABLACK WAS HERE / VANTAA.BLACK </h1><b></em></sup></marquee>
 
     <script src="/~desvox/qqq/linosis.js"></script>
