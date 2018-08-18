@@ -15,6 +15,9 @@
 
 <html>
 <head>
+  <audio id="cancer">
+    <source src="/~desvox/heya.mp3" type="audio/mpeg">
+  </audio>
     <meta charset="UTF-8">
     <link rel="icon" href="/favicon.ico" />
     <title>TiLdE.tOwN gRaFfItI wAlL</title>
@@ -131,9 +134,12 @@
        var n = document.getElementById("wanderfeels");
        n.innerHTML = feel;
      }
+     var imsorry = document.getElementById("cancer");
+     imsorry.loop = true;
+     imsorry.play();
     </script>
 <h3><a href="http://tilde.town/~frs/rug.html">it really tied the room together...</a></h3>
 
-    
+
   </body>
 </html>
