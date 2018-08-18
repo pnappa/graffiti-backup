@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!-- OH JUST A WEE HEADS UP -->
+<!-- You're in /var/www/ right now. -->
+<!-- If your editor tries to auto-save -->
+<!-- backups and shit, its gonna whine. -->
+<!-- *COUGH EMACS CCOUUGTHTHH* -->
+<!-- So yeah, turn that off if you know how. -->
+<!-- Hint for emacs: M-x auto-save-mode -->
+
+<!-- Also since this isn't a copied file, -->
+<!-- you can save your changes and look -->
+<!-- at them live without releasing edit -->
+<!-- lock. The lock is only released -->
+<!-- when you quit the editor. -->
+
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <title>TiLdE.tOwN gRaFfItI wAlL</title>
+    <style type="text/css">
+      body {
+        background: linear-gradient(red, #FFB6C1);
+      }
+      .rotato {
+        -webkit-transform: rotate(-10deg);
+        -moz-transform: rotate(-10deg);
+        -ms-transform: rotate(-10deg);
+        -o-transform: rotate(-10deg);
+        transform: rotate(-10deg);
+        display: inline-block;
+        position: relative;
+        border: none;
+        text-shadow:
+        3px 0 0 rgb(217,31,38),
+        12px 0 0 rgb(5,148,68),
+        21px 0 0 rgb(42,21,113);
+      }
+      .ranting {
+        border-radius: 50px;
+        background: #4B0082;
+        border: 1px solid purple;
+        font-size: 12px;
+        max-width: 500px;
+        color: #eee;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .goodbye {
+        color: #666666;
+        opacity: 1;
+        animation: fade 100s linear;
+        animation-iteration-count: infinite;
+      }
+      .hello {
+        color: #666666;
+        opacity: 0;
+        animation: fade2 100s linear;
+        animation-iteration-count: infinite;
+      }
+      @keyframes fade {
+        0%,100% { opacity: 0 }
+        50% { opacity: 1 }
+      }
+      @keyframes fade2 {
+        0%,100% { opacity: 1 }
+        50% { opacity: 0 }
+      }
+    </style>
+  </head>
+  <body>
+    <br><br>
+    <br><br>
+    <br><br>
+    <center>
+      <font>
+        <span class="rotato">K W A M WAS RIGHT</span>
+      </font>
+    </center>
+    <p style="font-family: Arial; font-size: 20px; color: #40E0D0;">
+      TARA WAZ HEA
+    </p>
+    <marquee direction="up"><img src="http://a.deviantart.net/avatars/a/n/animebases4you.gif?2"></marquee>
+    <marquee>the KWAM!!!!!!!!!! must flow ~~~~~~~~~~~~~~~~~~~~~~~~</marquee>
+    <br><br>
+    <div style="float: right; position: absolute; right: 10%" class="ranting">
+      <p>You know that feeling whenever an elevator (or how about a
+        rollercoaster?) starts to drop and you're just like "OH
+        SHIIIIIII ITSSSS ABOUTUTUT TO GET REALLLL?" Yeah thats
+        $EDGY_VARIABLE</p>
+    </div>
+    <div class="goodbye" style="font-family: monospace; font-size: 20px">
+      Goodbye
+    </div>
+    <marquee>
+      <img src="http://i.giphy.com/iTLeZcKBjkFVu.gif">
+    </marquee>
+    <div class="hello" style="font-family: monospace; font-size: 20px;">
+      Hello
+    </div>
+    <p style="text-align: center; max-width: 40%;">
+      Everyone looked at tilde.town, and they all said it was
+      <br>
+      <font size=28>
+        <span class="rotato">KWAM</span>
+      </font>
+    </p>
+    <p style="transform: rotate(1.4deg); float: right">
+      KILROY WAS HERE
+    </p>
+    <marquee onstart="startWander()" onbounce="wander()" scrollamount="2" direction="down" height="400" behavior="alternate" style="float: left; position:absolute; top: 0; left: 0;">
+      <marquee id="wanderfeels" scrollamount="2" behavior="alternate">
+        these feels, they wander
+      </marquee>
+    </marquee>
+    <script>
+     var feels = ["these feels, they wander", "as they drift, we ponder", "whether they will end"];
+     var feel = feels[0];
+     function startWander() {
+       feels.push(feels.shift());
+     }
+     function wander() {
+       var cFeel = feel;
+       feel = feels.shift();
+       feels.push(cFeel);
+       var n = document.getElementById("wanderfeels");
+       n.innerHTML = feel;
+     }
+    </script>
+<h3><a href="http://tilde.town/~frs/rug.html">it really tied the room together...</a></h3>
+
+    
+  </body>
+</html>
