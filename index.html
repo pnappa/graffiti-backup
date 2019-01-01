@@ -131,6 +131,16 @@ body {
       .sans {
         font-family: "Comic Sans MS";
       }
+      .pretty-text {
+	background: linear-gradient(to right, #11998E 0%, #38ef7d 100%);
+    	-webkit-background-clip: text;
+    	-webkit-text-fill-color: transparent;
+    	animation: rainbow 5s ease infinite;
+      }
+      @keyframes rainbow { 
+	from{filter: hue-rotate(0deg);}
+	to{filter: hue-rotate(-360deg);}
+      }
     </style>
     <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
     <meta http-equiv="X-Clacks-Overhead" content="GNU abraxas" />
