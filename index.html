@@ -145,13 +145,46 @@ body {
 	from{filter: hue-rotate(0deg);}
 	to{filter: hue-rotate(-360deg);}
       }
+
+@keyframes floaty {
+    0% {
+        transform: translate(0, -5px);
+    }
+
+    50% {
+        transform: translate(0, 5px);
+    }
+
+    100% {
+        transform: translate(0, -5px);
+    }
+}
+
+.floaty > span {
+    animation: floaty 2s infinite linear;
+    animation-fill-mode: both;
+    display: inline-block;
+}
+
+// make each child differ in their progress through their animation
+.floaty > span:nth-child(8n + 1) { animation-delay: -0.25s }
+.floaty > span:nth-child(8n + 2) { animation-delay: -0.5s }
+.floaty > span:nth-child(8n + 3) { animation-delay: -0.75s }
+.floaty > span:nth-child(8n + 4) { animation-delay: -1s }
+.floaty > span:nth-child(8n + 5) { animation-delay: -1.25s }
+.floaty > span:nth-child(8n + 6) { animation-delay: -1.5s }
+.floaty > span:nth-child(8n + 7) { animation-delay: -1.75s }
+
+.floaty {
+    letter-spacing: 7px; 
+}
+
     </style>
     <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
     <meta http-equiv="X-Clacks-Overhead" content="GNU abraxas" />
   </head>
   <body>
-    <h1>2019 LETS GO</h1>
-    <h2>hi!</h2>
+    <span class="floaty"><span>t</span><span>i</span><span>l</span><span>d</span><span>e</span><span>.</span><span>t</span><span>o</span><span>w</span><span>n</span></span>
     <h3>Little known fact: You can tune a filesystem, but you cannot tuna fish.</h3>
     <code>curl https://ptpb.pw/cvo- # :-)</code>
     <h1>tilde.town graffiti wall</h1>
