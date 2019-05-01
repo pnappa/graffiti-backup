@@ -183,12 +183,12 @@ body {
 }
 
 
-p,span,h1,h2,h3,h4,h5,h6,iframe,marquee,pre,b {
+*:not(body) {
   border-radius: 50%;
   -webkit-transition: -webkit-transform .8s ease-in-out;
           transition:         transform .8s ease-in-out;
 }
-p,span,h1,h2,h3,h4,h5,h6,iframe,marquee,pre,b:hover {
+*:not(body):hover {
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
     </style>
