@@ -69,7 +69,13 @@ var pick=~~(Math.random()*359),
 body {
   font-family: 'Source Sans Pro', sans-serif;
   margin: 100px 15%;
-  background-color: papayawhip;
+  background:
+        linear-gradient(red, transparent),
+        linear-gradient(to top left, lime, transparent),
+        linear-gradient(to top right, blue, transparent);
+    background-blend-mode: screen;
+}
+     
 }
   /* SHRIVEL IN ETERNAL UNSATISFACTION!! -~karim 
 * {
