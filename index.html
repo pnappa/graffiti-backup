@@ -18,6 +18,7 @@
 .splitting .char {
   animation: move 0.5s cubic-bezier(0.5, 0, 0.5, 1) alternate infinite;
   animation-delay: calc(60ms * var(--char-index));
+  display: inline-block;
 }
 @keyframes move {
   from {transform: translateY(-1em);}
