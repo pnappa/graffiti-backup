@@ -1,71 +1,81 @@
-<!DOCTYPE html>
-<!-- OH JUST A WEE HEADS UP -->
-<!-- You're in /var/www/ right now. -->
-<!-- There needs to be a /var/aww/ folder. -->
-<!-- If your editor tries to auto-save -->
-<!-- backups and shit, its gonna whine. -->
-<!-- *COUGH EMACS CCOUUGTHTHH* -->
-<!-- So yeah, turn that off if you know how. -->
-<!-- Hint for emacs: M-x auto-save-mode -->
+<!DOCTYPE html> <!-- OH JUST A WEE HEADS UP --> <!-- You're in /var/www/ right now. --> <!-- There 
+needs to be a /var/aww/ folder. --> <!-- If your editor tries to auto-save --> <!-- backups and 
+shit, its gonna whine. --> <!-- *COUGH EMACS CCOUUGTHTHH* --> <!-- So yeah, turn that off if you 
+know how. --> <!-- Hint for emacs: M-x auto-save-mode -->
 
-<!-- Also since this isn't a copied file, -->
-<!-- you can save your changes and look -->
-<!-- at them live without releasing edit -->
-<!-- lock. The lock is only released -->
-<!-- when you quit the editor. -->
-<!-- lazily copied from a library that did this lol -->
-<style>
-.splitting .char {
-  animation: move 0.5s cubic-bezier(0.5, 0, 0.5, 1) alternate infinite;
-  animation-delay: calc(60ms * var(--char-index));
-  display: inline-block;
-  font-size: 5em;
+<!-- Also since this isn't a copied file, --> <!-- you can save your changes and look --> <!-- at 
+them live without releasing edit --> <!-- lock. The lock is only released --> <!-- when you quit 
+the editor. --> <!-- lazily copied from a library that did this lol --> <style> .splitting .char {
+  animation: move 0.5s cubic-bezier(0.5, 0, 0.5, 1) alternate infinite; animation-delay: calc(60ms 
+  * var(--char-index)); display: inline-block; font-size: 5em;
 }
-@keyframes move {
-  from {transform: translateY(-1em); color:hsl(0,80%,50%);}
-  to {transform: translateY(0); color:hsl(200,80%,50%);}
+@keyframes move { from {transform: translateY(-1em); color:hsl(0,80%,50%);} to {transform: 
+  translateY(0); color:hsl(200,80%,50%);}
 }
-</style>
-<marquee behavior="alternate" scrolldelay=5 truespeed style="height:200px">
-<div data-splitting="" style="padding-top: 50px;--word-total:5; --char-total:24;" class="words chars splitting"><span class="word" data-word="whalecom" style="--word-index:0;"><span class="char" data-char="w" style="--char-index:0;">w</span><span class="char" data-char="h" style="--char-index:1;">h</span><span class="char" data-char="a" style="--char-index:2;">a</span><span class="char" data-char="l" style="--char-index:3;">l</span><span class="char" data-char="e" style="--char-index:4;">e</span><span class="char" data-char="c" style="--char-index:5;">c</span><span class="char" data-char="o" style="--char-index:6;">o</span><span class="char" data-char="m" style="--char-index:7;">m</span></span><span class="whitespace"> </span><span class="word" data-word="to" style="--word-index:1;"><span class="char" data-char="t" style="--char-index:8;">t</span><span class="char" data-char="o" style="--char-index:9;">o</span></span><span class="whitespace"> </span><span class="word" data-word="the" style="--word-index:2;"><span class="char" data-char="t" style="--char-index:10;">t</span><span class="char" data-char="h" style="--char-index:11;">h</span><span class="char" data-char="e" style="--char-index:12;">e</span></span><span class="whitespace"> </span><span class="word" data-word="graffiti" style="--word-index:3;"><span class="char" data-char="g" style="--char-index:13;">g</span><span class="char" data-char="r" style="--char-index:14;">r</span><span class="char" data-char="a" style="--char-index:15;">a</span><span class="char" data-char="f" style="--char-index:16;">f</span><span class="char" data-char="f" style="--char-index:17;">f</span><span class="char" data-char="i" style="--char-index:18;">i</span><span class="char" data-char="t" style="--char-index:19;">t</span><span class="char" data-char="i" style="--char-index:20;">i</span></span><span class="whitespace"> </span><span class="word" data-word="wal" style="--word-index:4;"><span class="char" data-char="w" style="--char-index:21;">w</span><span class="char" data-char="a" style="--char-index:22;">a</span><span class="char" data-char="l" style="--char-index:23;">l</span></span></div>
-</marquee>
-<pre>
+</style> <marquee behavior="alternate" scrolldelay=5 truespeed style="height:200px"> <div 
+data-splitting="" style="padding-top: 50px;--word-total:5; --char-total:24;" class="words chars 
+splitting"><span class="word" data-word="whalecom" style="--word-index:0;"><span class="char" 
+data-char="w" style="--char-index:0;">w</span><span class="char" data-char="h" 
+style="--char-index:1;">h</span><span class="char" data-char="a" 
+style="--char-index:2;">a</span><span class="char" data-char="l" 
+style="--char-index:3;">l</span><span class="char" data-char="e" 
+style="--char-index:4;">e</span><span class="char" data-char="c" 
+style="--char-index:5;">c</span><span class="char" data-char="o" 
+style="--char-index:6;">o</span><span class="char" data-char="m" 
+style="--char-index:7;">m</span></span><span class="whitespace"> </span><span class="word" 
+data-word="to" style="--word-index:1;"><span class="char" data-char="t" 
+style="--char-index:8;">t</span><span class="char" data-char="o" 
+style="--char-index:9;">o</span></span><span class="whitespace"> </span><span class="word" 
+data-word="the" style="--word-index:2;"><span class="char" data-char="t" 
+style="--char-index:10;">t</span><span class="char" data-char="h" 
+style="--char-index:11;">h</span><span class="char" data-char="e" 
+style="--char-index:12;">e</span></span><span class="whitespace"> </span><span class="word" 
+data-word="graffiti" style="--word-index:3;"><span class="char" data-char="g" 
+style="--char-index:13;">g</span><span class="char" data-char="r" 
+style="--char-index:14;">r</span><span class="char" data-char="a" 
+style="--char-index:15;">a</span><span class="char" data-char="f" 
+style="--char-index:16;">f</span><span class="char" data-char="f" 
+style="--char-index:17;">f</span><span class="char" data-char="i" 
+style="--char-index:18;">i</span><span class="char" data-char="t" 
+style="--char-index:19;">t</span><span class="char" data-char="i" 
+style="--char-index:20;">i</span></span><span class="whitespace"> </span><span class="word" 
+data-word="wal" style="--word-index:4;"><span class="char" data-char="w" 
+style="--char-index:21;">w</span><span class="char" data-char="a" 
+style="--char-index:22;">a</span><span class="char" data-char="l" 
+style="--char-index:23;">l</span></span></div> </marquee> <pre>
 
 
- __   .__         _______                                    .__                                 
-|  | _|  |   _____\   _  \   ____   __  _  _______    ______ |  |__   ___________   ____         
-|  |/ /  |  /  ___/  /_\  \_/ __ \  \ \/ \/ /\__  \  /  ___/ |  |  \_/ __ \_  __ \_/ __ \        
-|    <|  |__\___ \\  \_/   \  ___/   \     /  / __ \_\___ \  |   Y  \  ___/|  | \/\  ___/        
-|__|_ \____/____  >\_____  /\___  >   \/\_/  (____  /____  > |___|  /\___  >__|    \___  > /\    
-     \/         \/       \/     \/                \/     \/       \/     \/            \/  )/    
-.__                         _____                        __________             .__  .__      ._.
-|  |   _______  __ ____   _/ ____\______  ____   _____   \______   \ ___________|  | |__| ____| |
-|  |  /  _ \  \/ // __ \  \   __\\_  __ \/  _ \ /     \   |    |  _// __ \_  __ \  | |  |/    \ |
-|  |_(  <_> )   /\  ___/   |  |   |  | \(  <_> )  Y Y  \  |    |   \  ___/|  | \/  |_|  |   |  \|
-|____/\____/ \_/  \___  >  |__|   |__|   \____/|__|_|  /  |______  /\___  >__|  |____/__|___|  /_
-                      \/                             \/          \/     \/                   \/\/
+ __ .__ _______ .__
+|  | _| | _____\ _ \ ____ __ _ _______ ______ | |__ ___________ ____ / / | / ___/ /_\ \_/ __ \ \ 
+|  |\/ \/ /\__ \ / ___/ | | \_/ __ \_ __ \_/ __ \
+|    <| |__\___ \\ \_/ \ ___/ \ / / __ \_\___ \ | Y \ ___/| | \/\ ___/ __|_ \____/____ >\_____ 
+|/\___ > \/\_/ (____ /____ > |___| /\___ >__| \___ > /\
+     \/ \/ \/ \/ \/ \/ \/ \/ \/ )/ .__ _____ __________ .__ .__ ._.
+|  |   _______ __ ____ _/ ____\______ ____ _____ \______ \ ___________| | |__| ____| | / _ \ \/ // 
+|  |  __ \ \ __\\_ __ \/ _ \ / \ | | _// __ \_ __ \ | | |/ \ |
+|  |_( <_> ) /\ ___/ | | | | \( <_> ) Y Y \ | | \ ___/| | \/ |_| | | \|
+|____/\____/ \_/ \___ > |__| |__| \____/|__|_| / |______ /\___ >__| |____/__|___| /_
+                      \/ \/ \/ \/ \/\/
 
-</pre>
-<h4>kls0e 8-31-2020</h4>
+</pre> <h4>kls0e 8-31-2020</h4>
 
-<h1>whaat</h1>
-<h1> hello I'm ~mattx and I've joined tilde.town, this graffiti wall is just perfect </h1>
+<h1>whaat</h1> <h1> hello I'm ~mattx and I've joined tilde.town, this graffiti wall is just 
+perfect </h1>
 
-<h1> <a href="https://symkowick.org/posts/open-web-rant/">aymswick</a> has joined tilde.town</h1>
+<h1> <a href="https://symkowick.org/posts/open-web-rant/">aymswick</a> has joined tilde.town</h1> 
 <p>just getting this in here whooOOOp</p>
 
-<pre>
- _____ ___ _     ____  _____   _____ _____        ___   _ 
-|_   _|_ _| |   |  _ \| ____| |_   _/ _ \ \      / / \ | |
-  | |  | || |   | | | |  _|     | || | | \ \ /\ / /|  \| |
-  | |  | || |___| |_| | |___    | || |_| |\ V  V / | |\  |
-  |_| |___|_____|____/|_____|   |_| \___/  \_/\_/  |_| \_|
+<pre> _____ ___ _ ____ _____ _____ _____ ___ _
+|_ _|_ _| | | _ \| ____| |_ _/ _ \ \ / / \ | |
+  | |  | || |   | | | |  _| | || | | \ \ /\ / /| \| |
+  | |  | || |___| |_| | |___ | || |_| |\ V V / | |\ |
+  |_| |___|_____|____/|_____| |_| \___/ \_/\_/ |_| \_|
                                                           
- ____  _____ ____  ____  _____ ____  _____ _   _ _____ 
-|  _ \| ____|  _ \|  _ \| ____/ ___|| ____| \ | |_   _|
-| |_) |  _| | |_) | |_) |  _| \___ \|  _| |  \| | | |  
-|  _ <| |___|  __/|  _ <| |___ ___) | |___| |\  | | |  
-|_| \_\_____|_|   |_| \_\_____|____/|_____|_| \_| |_|  
+ ____ _____ ____ ____ _____ ____ _____ _ _ _____
+|  _ \| ____| _ \| _ \| ____/ ___|| ____| \ | |_ _|
+| |_) | _| | |_) | |_) | _| \___ \| _| | \| | | |
+|  _ <| |___| __/| _ <| |___ ___) | |___| |\ | | | _| \_\_____|_| |_| \_\_____|____/|_____|_| \_| 
+||_|
                                                        
 </pre>
 
@@ -92,381 +102,265 @@ oh my god, html is way too freeform
 
 <script>
 // i don't know or want to know what this script does
-var pick=~~(Math.random()*359),
-    tag=document.createElement('style'),
-    style='::-moz-selection {color:green;text-shadow:rgba(0,0,0,.1)1px 2px 2px;background-color:hsl($pick,75%,50%)!important}::-webkit-selection{color:black;text-shadow:rgba(0,0,0,.1)1px 2px 2px;background-color:hsl($pick,75%,50%)!important}::selection{color:black;text-shadow:rgba(0,0,0,.1)1px 2px 2px;background-color:hsl($pick,75%,50%)!important}';
-  tag.innerHTML=style.replace(/\$pick/g,pick);
-  document.body.appendChild(tag);
+var pick=~~(Math.random()*359), tag=document.createElement('style'), style='::-moz-selection 
+    {color:green;text-shadow:rgba(0,0,0,.1)1px 2px 
+    2px;background-color:hsl($pick,75%,50%)!important}::-webkit-selection{color:black;text-shadow:rgba(0,0,0,.1)1px 
+    2px 
+    2px;background-color:hsl($pick,75%,50%)!important}::selection{color:black;text-shadow:rgba(0,0,0,.1)1px 
+    2px 2px;background-color:hsl($pick,75%,50%)!important}';
+  tag.innerHTML=style.replace(/\$pick/g,pick); document.body.appendChild(tag);
 </script>
 
-<a href="http://vantaa.black/" target="_blank"><marquee style="height:;width:" scrollamount="10" scrolldelay="5"> <sup><em><b><h1 style="color: black;background-color: black; font-size: 150px;position: top:0px">VANTAA.BLACK </h1><b></em></sup></marquee></a>    
-	everything, -->
-  <head>
-    <audio id="backgroundmusic" src="/~mips/audio/2POPCORN.mp3" loop></audio>
-    <p>Background music courtesy of <a href="/~wingy">~wingy</a>. Click the button below to disable.</p>
+<a href="http://vantaa.black/" target="_blank"><marquee style="height:;width:" scrollamount="10" 
+	scrolldelay="5"> <sup><em><b><h1 style="color: black;background-color: black; font-size: 
+	150px;position: top:0px">VANTAA.BLACK </h1><b></em></sup></marquee></a> everything, -->
+  <head> <audio id="backgroundmusic" src="/~mips/audio/2POPCORN.mp3" loop></audio> <p>Background 
+    music courtesy of <a href="/~wingy">~wingy</a>. Click the button below to disable.</p> 
     <marquee behavior="alternate" scrolldelay=5>
-        <button onclick="document.querySelector('#backgroundmusic').src = '';this.style.display='none'">Disable Background Music</button>
-    </marquee>
-    <iframe src="/~wingy" width="100%"></iframe>
-    <h1> Hi! </h1>
-    <meta charset="UTF-8">
-    <link rel="icon" href="/favicon.ico" />
-    <title>👻 ~Town Graffiti Wal)</title>
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
-    <style type="text/css">
-@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap');
-body {
-  /* NOW ENDURE THE HORRIBLE UNSATISFACTION OF HANDWRITING FONTS!!! ~mattx */
-  font-family: /* 'Source Sans Pro', sans-serif */ 'Comic Sans MS', 'Leckerli One', 'cursive';
-  margin: 100px 15%;
+        <button onclick="document.querySelector('#backgroundmusic').src = 
+    '';this.style.display='none'">Disable Background Music</button> </marquee> <iframe 
+    src="/~wingy" width="100%"></iframe> <h1> Hi! </h1> <meta charset="UTF-8"> <link rel="icon" 
+    href="/favicon.ico" /> <title>👻 ~Town Graffiti Wal)</title> <link 
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"> <style 
+    type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap'); body {
+  /* NOW ENDURE THE HORRIBLE UNSATISFACTION OF HANDWRITING FONTS!!! ~mattx */ font-family: /* 
+  'Source Sans Pro', sans-serif */ 'Comic Sans MS', 'Leckerli One', 'cursive'; margin: 100px 15%; 
   background:
-        linear-gradient(lime, transparent),
-        linear-gradient(to top left, red, transparent),
+        linear-gradient(lime, transparent), linear-gradient(to top left, red, transparent), 
         linear-gradient(to top right, blue, transparent);
     background-blend-mode: screen;
 }
      
-  /* SHRIVEL IN ETERNAL UNSATISFACTION!! -~karim */
-/* * {
+  /* SHRIVEL IN ETERNAL UNSATISFACTION!! -~karim */ /* * {
    -webkit-transform: rotate(1deg);
-  -moz-transform: rotate(1deg);
-  -ms-transform: rotate(1deg);
-  -o-transform: rotate(1deg);
+  -moz-transform: rotate(1deg); -ms-transform: rotate(1deg); -o-transform: rotate(1deg); 
   transform: rotate(1deg); // You're welcome :P -- ~wingy
 } gah I hate the tilt on this*/
-      .rotato {
-        -webkit-transform: rotate(-10deg);
-        -moz-transform: rotate(-10deg);
-        -ms-transform: rotate(-10deg);
-        -o-transform: rotate(-10deg);
-        transform: rotate(-10deg);
-        display: inline-block;
-        position: relative;
-        border: none;
-        text-shadow:
-          3px 0 0 rgb(217,31,38),
-          12px 0 0 rgb(5,148,68),
-          21px 0 0 rgb(42,21,113);
+      .rotato { -webkit-transform: rotate(-10deg); -moz-transform: rotate(-10deg); -ms-transform: 
+        rotate(-10deg); -o-transform: rotate(-10deg); transform: rotate(-10deg); display: 
+        inline-block; position: relative; border: none; text-shadow:
+          3px 0 0 rgb(217,31,38), 12px 0 0 rgb(5,148,68), 21px 0 0 rgb(42,21,113);
       }
-      .behappy {
-        -webkit-transform: rotate(-10deg);
-        -moz-transform: rotate(-10deg);
-        -ms-transform: rotate(-10deg);
-        -o-transform: rotate(-10deg);
-        transform: rotate(-10deg);
-        display: inline-block;
-        position: relative;
-        border: none;
-	font-size:20pt;
-        text-shadow:
-          3px 0 0 rgb(217,31,38),
-          12px 0 0 rgb(5,148,68),
-          21px 0 0 rgb(42,21,113);
+      .behappy { -webkit-transform: rotate(-10deg); -moz-transform: rotate(-10deg); -ms-transform: 
+        rotate(-10deg); -o-transform: rotate(-10deg); transform: rotate(-10deg); display: 
+        inline-block; position: relative; border: none; font-size:20pt; text-shadow:
+          3px 0 0 rgb(217,31,38), 12px 0 0 rgb(5,148,68), 21px 0 0 rgb(42,21,113);
       }
 
-      a {
-          color: #eb04ef;
+      a { color: #eb04ef;
       }
-      .ranting {
-        border-radius: 50px;
-        background: #4B0082;
-        border: 1px solid purple;
-        font-size: 12px; max-width: 500px;
-        color: #eee;
-        padding-top: 8px;
-        padding-bottom: 8px;
-        padding-left: 20px;
-        padding-right: 20px;
+      .ranting { border-radius: 50px; background: #4B0082; border: 1px solid purple; font-size: 
+        12px; max-width: 500px; color: #eee; padding-top: 8px; padding-bottom: 8px; padding-left: 
+        20px; padding-right: 20px;
       }
-      .goodbye {
-        color: #666666;
-        opacity: 1;
-        animation: fade 100s linear;
+      .goodbye { color: #666666; opacity: 1; animation: fade 100s linear; 
         animation-iteration-count: infinite;
       }
-      .hello {
-        color: #666666;
-        opacity: 0;
-        animation: fade2 100s linear;
+      .hello { color: #666666; opacity: 0; animation: fade2 100s linear; 
         animation-iteration-count: infinite;
       }
-      @keyframes fade {
-        0%,100% { opacity: 0 }
-        50% { opacity: 1 }
+      @keyframes fade { 0%,100% { opacity: 0 } 50% { opacity: 1 }
       }
-      @keyframes fade2 {
-        0%,100% { opacity: 1 }
-        50% { opacity: 0 }
+      @keyframes fade2 { 0%,100% { opacity: 1 } 50% { opacity: 0 }
       }
-      .spana {background-color:black; animation-name: spana; animation-duration: 3000ms; animation-direction: normal; animation-iteration-count:infinite;}
-      @keyframes spana {from {color:magenta;} to {color:yellow;}}
+      .spana {background-color:black; animation-name: spana; animation-duration: 3000ms; 
+      animation-direction: normal; animation-iteration-count:infinite;} @keyframes spana {from 
+      {color:magenta;} to {color:yellow;}}
       #xero {
         margin-left: 10px;
       }
       #xero pre {
-        line-height: 1.2em;
-        white-space: pre;
-        color: #000;
-        padding: 1em 0 1em 0;
-        font-size: 16px;
-        line-height: 16px;
-        font-family:  Monaco, monospace;
+        line-height: 1.2em; white-space: pre; color: #000; padding: 1em 0 1em 0; font-size: 16px; 
+        line-height: 16px; font-family: Monaco, monospace;
       }
-      .boba {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        width: 180px;
-        height: 210px;
-        margin: -105px 0 0 -90px;
+      .boba { position: absolute; left: 50%; top: 50%; width: 180px; height: 210px; margin: -105px 
+        0 0 -90px;
       }
 
-      .boba::before {
-        content: '';
-        display: block;
-        width: 15px;
-        height: 15px;
-        margin: -15px 0 0-15px;
+      .boba::before { content: ''; display: block; width: 15px; height: 15px; margin: -15px 0 
+        0-15px;
       }
-      .sans {
-        font-family: "Comic Sans MS";
+      .sans { font-family: "Comic Sans MS";
       }
-      .info {
-        font-family: monospace;
-        background-color: white;
-        border-style: dashed;
-        text-align: center;
+      .info { font-family: monospace; background-color: white; border-style: dashed; text-align: 
+        center;
       }
-      .pretty-text {
-	background: linear-gradient(to right, #11998E 0%, #38ef7d 100%);
-    	-webkit-background-clip: text;
-    	-webkit-text-fill-color: transparent;
-    	animation: rainbow 5s ease infinite;
+      .pretty-text { background: linear-gradient(to right, #11998E 0%, #38ef7d 100%); 
+	-webkit-background-clip: text; -webkit-text-fill-color: transparent; animation: rainbow 5s 
+	ease infinite;
       }
       
-      @keyframes rainbow { 
-	from{filter: hue-rotate(0deg);}
-	to{filter: hue-rotate(-360deg);}
+      @keyframes rainbow { from{filter: hue-rotate(0deg);} to{filter: hue-rotate(-360deg);}
       }
 
-@keyframes floaty {
-    0% {
+@keyframes floaty { 0% {
         transform: translate(0, -5px);
     }
 
-    50% {
-        transform: translate(0, 5px);
+    50% { transform: translate(0, 5px);
     }
 
-    100% {
-        transform: translate(0, -5px);
+    100% { transform: translate(0, -5px);
     }
 }
 
-.floaty > span {
-    animation: floaty 20s infinite linear;
-    animation-fill-mode: both;
-    display: inline-block;
+.floaty > span { animation: floaty 20s infinite linear; animation-fill-mode: both; display: 
+    inline-block;
       font-size: 30px;
 }
 
 // make each child differ in their progress through their animation
-.floaty > span:nth-child(8n + 1) { animation-delay: -0.25s }
-.floaty > span:nth-child(8n + 2) { animation-delay: -0.5s }
-.floaty > span:nth-child(8n + 3) { animation-delay: -0.75s }
-.floaty > span:nth-child(8n + 4) { animation-delay: -1s }
-.floaty > span:nth-child(8n + 5) { animation-delay: -1.25s }
-.floaty > span:nth-child(8n + 6) { animation-delay: -1.5s }
-.floaty > span:nth-child(8n + 7) { animation-delay: -1.75s }
+.floaty > span:nth-child(8n + 1) { animation-delay: -0.25s } .floaty > span:nth-child(8n + 2) { 
+animation-delay: -0.5s } .floaty > span:nth-child(8n + 3) { animation-delay: -0.75s } .floaty > 
+span:nth-child(8n + 4) { animation-delay: -1s } .floaty > span:nth-child(8n + 5) { 
+animation-delay: -1.25s } .floaty > span:nth-child(8n + 6) { animation-delay: -1.5s } .floaty > 
+span:nth-child(8n + 7) { animation-delay: -1.75s }
 
-.floaty {
-    letter-spacing: 7px; 
+.floaty { letter-spacing: 7px;
 }
 
 
-*:not(body) {
-  border-radius: 50%;
-  -webkit-transition: -webkit-transform .8s ease-in-out;
-          transition:         transform .8s ease-in-out;
+*:not(body) { border-radius: 50%; -webkit-transition: -webkit-transform .8s ease-in-out;
+          transition: transform .8s ease-in-out;
 }     /*
-*:not(body) {
-  -webkit-transform: rotate(1deg);
+*:not(body) { -webkit-transform: rotate(1deg);
           transform: rotate(1deg);}*/
-    </style>
-    <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
-    <meta http-equiv="X-Clacks-Overhead" content="GNU abraxas" />
+    </style> <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" /> <meta 
+    http-equiv="X-Clacks-Overhead" content="GNU abraxas" />
   </head>
 
 
-  <body>
-      <p>isn't this a good contender for world record largest hand-written html page? well before it up and vanishes.<br/><i><a href="/~karim/">~karim</a></i></p>
-hello
-      Oh deer.<br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <body> <p>isn't this a good contender for world record largest hand-written html page? well 
+      before it up and vanishes.<br/><i><a href="/~karim/">~karim</a></i></p>
+hello Oh deer.<br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> 
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> 
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> 
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> 
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> 
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> 
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> 
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> 
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> 
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> 
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> 
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> 
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> 
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> 
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> 
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> 
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> 
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> 
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> 
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> 
     <h2>This blank area was provided for you, by me.</h2>
-	<p>Blank area commandeered for the purposes of blank space piracy.</p>
-	<p>Surrender your spaces, or walk the plank!</p>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><div class="info">Hi, I really appreciate all the space here. Thank you.</div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br>enjoy cat ~ted</br>
-    <video width ="640" height="480" controls autoplay loop>
-    <source src="http://tilde.town/~ted/assets/thank.mp4" type="video/mp4">
-    </video>
-    <img src="http://tilde.town/~ted/assets/jesus.png" />
-    <p>tilted ever so slightly... by <a href="/~karim/">~karim</a><br>NO! Untilted by <a href="/~wingy">~wingy</a></p>
-    <span class="floaty"><span>t</span><span>i</span><span>l</span><span>d</span><span>e</span><span>.</span><span>t</span><span>o</span><span>w</span><span>n</span></span>
-    <h3>Little known fact: You can tune a filesystem, but you cannot tuna fish.</h3>
-    <code>curl https://ptpb.pw/cvo- # :-)</code>
-    <h1>tilde.town graffiti wall</h1>
-    <marquee>~brendantcc was here - yeet!</marquee>
-    <marquee>~l0010o0001l says HELLO HAVE GR8 DAY!!!!!</marquee>
-    <p style="padding:20px;border-radius:5px;background:#1C1C1C;color:#fff;font-family:monospace;">
-      x4464@tildetown:~$ ./welcome.py <br><br>
-      <span style="color:#00aaee;">💀 WELCOME TO THE ABYSS 💀</span>
-    </p>
-    <div style="border-style:solid;" class="hello">
+	<p>Blank area commandeered for the purposes of blank space piracy.</p> <p>Surrender your 
+	spaces, or walk the plank!</p>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> 
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> 
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> 
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> 
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> 
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> 
+    <br><br><br><br><br><br><div class="info">Hi, I really appreciate all the space here. Thank 
+    you.</div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> 
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> 
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> 
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> 
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> 
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> 
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> 
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> 
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> 
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> 
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> 
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> 
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> 
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> 
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> 
+    <br>enjoy cat ~ted</br> <video width ="640" height="480" controls autoplay loop> <source 
+    src="http://tilde.town/~ted/assets/thank.mp4" type="video/mp4"> </video> <img 
+    src="http://tilde.town/~ted/assets/jesus.png" /> <p>tilted ever so slightly... by <a 
+    href="/~karim/">~karim</a><br>NO! Untilted by <a href="/~wingy">~wingy</a></p> <span 
+    class="floaty"><span>t</span><span>i</span><span>l</span><span>d</span><span>e</span><span>.</span><span>t</span><span>o</span><span>w</span><span>n</span></span> 
+    <h3>Little known fact: You can tune a filesystem, but you cannot tuna fish.</h3> <code>curl 
+    https://ptpb.pw/cvo- # :-)</code> <h1>tilde.town graffiti wall</h1> <marquee>~brendantcc was 
+    here - yeet!</marquee> <marquee>~l0010o0001l says HELLO HAVE GR8 DAY!!!!!</marquee> <p 
+    style="padding:20px;border-radius:5px;background:#1C1C1C;color:#fff;font-family:monospace;">
+      x4464@tildetown:~$ ./welcome.py <br><br> <span style="color:#00aaee;">💀 WELCOME TO THE 
+      ABYSS 💀</span>
+    </p> <div style="border-style:solid;" class="hello">
       i made this box in order to highlight my immense love for other <del>girls</del> townies
-    </div>
-    Salut<br>
-    <p>YEET (brendantcc was here too! :P)</p>
-    <h1 class="sans">play this for more sans epicness</h1>
-    <audio controls>
-      <source src="/~fantoro/memes/sANS.mp3" type="audio/mpeg" />
-      Your browser isn't epic enough.
-    </audio>
-    <p class="sans">hey to make sans-related text more epic install comic sans on your system lol</p>
-    <br />
-	<h1>"Yeet not, lest yee also be yeeted" -Blue</h1>
-   <marquee><h1>Heyo!</h1></marquee>
-    <img src="http://pixelartmaker.com/art/2ce07bdb4cd8e74.png" />
-    <h1 class="sans">EVERYONE PRAY TO OUR GOD EPIC SANS</h1>
-    <img src="https://i.imgur.com/DvScuTz.gif"/>
-    <pre>OOOH graffiti.html went through a mass-level extinction. doge says so wow, much amaze</pre>
-    <a href="http://www.plspetdoge.com/"><img src="https://media.giphy.com/media/QgY6POUIlC9y0/giphy-downsized.gif" alt="a doge looking like they want petpets"/></a>
-    <br>it really do be like that sometimes
-    <img src="https://i.redd.it/vwg7bnodv1i11.jpg">
-    <br> this is npa testing his bot.....
-    <h1>God Help Me!</h1>
-    <p class="rotato">and this is desvox also testing the same bot</p>
-    <h1>you are a very nice person</h1>
-    <occult>asabovesobelow</occult>
-    <p style="text-align: center;">garlic bread</p>
-    <p>lol I have no idea how to css or html ~fantoro</p>
-    <div style="text-align:right;">
-      I show you to see it through the light of Taco<br>
-      And the understanding of Taco<br>
-      Because when you see the face of Taco, you will die<br>
-      And there will be nothing left of you<br>
-      Except the Taco-man, the Taco-woman<br>
-      The heavenly man, the heavenly woman<br>
-      The heavenly child<br>
-      The heavenly children<br>
-      There'll be prayer on your lips day and night<br>
-      There'll be a song of jubilee waiting for your king<br>
-      There will be nothing you will not be be looking for in this world<br>
-      Except in for your Taco<br>
-      This is all a dream<br>
-      A dream in death
-    </div>
-    <br><br><br><br><p>Hello! <i>~tng</i></p><br/>
-    <b>Link2006 was here</b><br>
-    --your link is very lewd so it has been removed--<br>
-    <p> testing</p>
-    <p>hello from @curbtripper</p>
-    <p style="font-size: 8px">i love you all</p>
-    <video width="640" height="480" controls>
-    <source src="http://tilde.town/~tunas/assets/video.mov" type="video/mp4">
-    </video>
-    <p class="behappy">be happy</p>
-    <p style="font-size:3em;">Hey you! You're pretty cool <span style="color:red;">❤</span></p>
+    </div> Salut<br> <p>YEET (brendantcc was here too! :P)</p> <h1 class="sans">play this for more 
+    sans epicness</h1> <audio controls>
+      <source src="/~fantoro/memes/sANS.mp3" type="audio/mpeg" /> Your browser isn't epic enough.
+    </audio> <p class="sans">hey to make sans-related text more epic install comic sans on your 
+    system lol</p> <br />
+	<h1>"Yeet not, lest yee also be yeeted" -Blue</h1> <marquee><h1>Heyo!</h1></marquee>
+    <img src="http://pixelartmaker.com/art/2ce07bdb4cd8e74.png" /> <h1 class="sans">EVERYONE PRAY 
+    TO OUR GOD EPIC SANS</h1> <img src="https://i.imgur.com/DvScuTz.gif"/> <pre>OOOH graffiti.html 
+    went through a mass-level extinction. doge says so wow, much amaze</pre> <a 
+    href="http://www.plspetdoge.com/"><img 
+    src="https://media.giphy.com/media/QgY6POUIlC9y0/giphy-downsized.gif" alt="a doge looking like 
+    they want petpets"/></a> <br>it really do be like that sometimes <img 
+    src="https://i.redd.it/vwg7bnodv1i11.jpg"> <br> this is npa testing his bot..... <h1>God Help 
+    Me!</h1> <p class="rotato">and this is desvox also testing the same bot</p> <h1>you are a very 
+    nice person</h1> <occult>asabovesobelow</occult> <p style="text-align: center;">garlic 
+    bread</p> <p>lol I have no idea how to css or html ~fantoro</p> <div 
+    style="text-align:right;">
+      I show you to see it through the light of Taco<br> And the understanding of Taco<br> Because 
+      when you see the face of Taco, you will die<br> And there will be nothing left of you<br> 
+      Except the Taco-man, the Taco-woman<br> The heavenly man, the heavenly woman<br> The 
+      heavenly child<br> The heavenly children<br> There'll be prayer on your lips day and 
+      night<br> There'll be a song of jubilee waiting for your king<br> There will be nothing you 
+      will not be be looking for in this world<br> Except in for your Taco<br> This is all a 
+      dream<br> A dream in death
+    </div> <br><br><br><br><p>Hello! <i>~tng</i></p><br/> <b>Link2006 was here</b><br> --your link 
+    is very lewd so it has been removed--<br> <p> testing</p> <p>hello from @curbtripper</p> <p 
+    style="font-size: 8px">i love you all</p> <video width="640" height="480" controls> <source 
+    src="http://tilde.town/~tunas/assets/video.mov" type="video/mp4"> </video> <p 
+    class="behappy">be happy</p> <p style="font-size:3em;">Hey you! You're pretty cool <span 
+    style="color:red;">❤</span></p>
 
-    <p> this is a message from beyond the graffiti binary's grave... yes pls add graffiti back to path!!! </p>
-    <p>Yes. Please. Do. :3</p>
-    <p>yes, please! for any clueless peeps: edit /var/www/tilde.town/graffiti.html :) <small>~imtilda was here! <span class="pretty-text">nyoom</span></small></p>
-    <p>wah thanks</p>
-    <p>GRAFFITI IS BACK</p>
-	<p>🎉</p>
-    <marquee>Woooah!!!</marquee>
-    <br>
-    CAN YOU DIG IT :shovel emoji: :grave emoji or possibly flower garden?:
-    <br>
-    This is page too much for terris! I <3 the skellington in the pink shoes though.
-    <br>
-    <marquee style="color:#008080;"><h3> I should have changed the editor. This one does not :q</h3></marquee>
-    <marquee>how do I exit vvvvviiimmmm?????</marquee>
-    <p><a href="https://loosepoops.github.io">LOOSE POOPS</a> are sometimes a surprise.</p>
-    <p>hey guys, its austin -thanks, very cool.</p>
+    <p> this is a message from beyond the graffiti binary's grave... yes pls add graffiti back to 
+    path!!! </p> <p>Yes. Please. Do. :3</p> <p>yes, please! for any clueless peeps: edit 
+    /var/www/tilde.town/graffiti.html :) <small>~imtilda was here! <span 
+    class="pretty-text">nyoom</span></small></p> <p>wah thanks</p> <p>GRAFFITI IS BACK</p>
+	<p>🎉</p> <marquee>Woooah!!!</marquee> <br> CAN YOU DIG IT :shovel emoji: :grave emoji or 
+    possibly flower garden?: <br> This is page too much for terris! I <3 the skellington in the 
+    pink shoes though. <br> <marquee style="color:#008080;"><h3> I should have changed the editor. 
+    This one does not :q</h3></marquee> <marquee>how do I exit vvvvviiimmmm?????</marquee> <p><a 
+    href="https://loosepoops.github.io">LOOSE POOPS</a> are sometimes a surprise.</p> <p>hey guys, 
+    its austin -thanks, very cool.</p>
 
-    <p>oml this place is amazing, dotpoly here!</p>
-    <marquee>now im geneous!</marquee>
+    <p>oml this place is amazing, dotpoly here!</p> <marquee>now im geneous!</marquee>
 
-		<!-- don't know why, but I am just sick of everything, and amd completely
-		done now.  I just want a simpler life, but everything keeps adding itself to my workload, and I cannot free myself from any of it-->
-    <div style="width:100%;background-color:blue;padding:5%;">hi its pie!</div>
-    <p style="color: orange;">This is your captain ~patrick speaking, I hope ya'll had a great flight :)</p>
-    <p style='color: #D85;'>Why would you do this spinny</p>
+		<!-- don't know why, but I am just sick of everything, and amd completely done 
+		now.  I just want a simpler life, but everything keeps adding itself to my 
+		workload, and I cannot free myself from any of it-->
+    <div style="width:100%;background-color:blue;padding:5%;">hi its pie!</div> <p style="color: 
+    orange;">This is your captain ~patrick speaking, I hope ya'll had a great flight :)</p> <p 
+    style='color: #D85;'>Why would you do this spinny</p>
 
-    <p style="color: pink">its me, ~luna, and, do you play video games???????? gamer girls hit me up on the interweb</p>
-    <marquee>SPAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACE</marquee>
-    <p>it's alice, falling down the rabit hole again</p>
+    <p style="color: pink">its me, ~luna, and, do you play video games???????? gamer girls hit me 
+    up on the interweb</p> 
+    <marquee>SPAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACE</marquee> <p>it's alice, 
+    falling down the rabit hole again</p>
 	<p>Eee!</p>
+<p>It's cool to see that most everybody else here is in despair. I feel like my life is going better
+than I could have ever asked for, and yet, I feel that something off. I am glad to be a part of this
+community though, hopefully I can meet more people like me</p>
 
-
-<blockquote>
-<blockquote>
-<blockquote>
-<p style="color: purple">~im nested in some blockquotes, so comfy~</p>
-<p style="color: green">~I'm here too :)~</p>
-</blockquote>
-</blockquote>
-</blockquote>
+<blockquote> <blockquote> <blockquote> <p style="color: purple">~im nested in some blockquotes, so 
+comfy~</p> <p style="color: green">~I'm here too :)~</p> </blockquote> </blockquote> </blockquote> 
 <pre>
       
-  O  < Hello world
- _|_
+  O < Hello world _|_
 | | |
   |
- / \
-</pre>
-<p>derp</p>
+ / \ </pre> <p>derp</p>
   </body>
 </html>
+
 
