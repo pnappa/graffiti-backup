@@ -5,7 +5,16 @@ know how. --> <!-- Hint for emacs: M-x auto-save-mode -->
 
 <!-- Also since this isn't a copied file, --> <!-- you can save your changes and look --> <!-- at 
 them live without releasing edit --> <!-- lock. The lock is only released --> <!-- when you quit 
-the editor. --> <!-- lazily copied from a library that did this lol --> <style> .splitting .char {
+the editor. --> <!-- lazily copied from a library that did this lol --> <style>
+<!--
+  __  .__.__       .___           __
+_/  |_|__|  |    __| _/____     _/  |_  ______  _  ______
+\   __\  |  |   / __ |/ __ \    \   __\/  _ \ \/ \/ /    \
+ |  | |  |  |__/ /_/ \  ___/     |  | (  <_> )     /   |  \
+ |__| |__|____/\____ |\___  > /\ |__|  \____/ \/\_/|___|  /
+                    \/    \/  \/                        \/
+-->
+ .splitting .char {
   animation: move 0.5s cubic-bezier(0.5, 0, 0.5, 1) alternate infinite; animation-delay: calc(60ms 
   * var(--char-index)); display: inline-block; font-size: 5em;
 }
